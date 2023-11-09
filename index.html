@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>TaskFeedBack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+
+<body>
+    <div class="feedBack-container">
+        <div class="emoji-container">
+            <i id="delE" class="fa-regular fa-face-angry fa-from fa-3x right-d"></i>
+            <i class="fa-regular fa-face-laugh fa-from fa-3x"></i>
+            <i class="fa-regular fa-face-smile fa-from fa-3x"></i>
+            <i class="fa-regular fa-face-meh fa-from fa-3x"></i>
+            <i class="fa-regular fa-face-frown fa-from fa-3x"></i>
+            <i class="fa-regular fa-face-angry fa-from fa-3x" id="right"></i>
+        </div>
+
+        <div class="rating-container">
+            <div class="star-widget">
+                <input onclick="document.getElementById('delE').style.display='none'" type="radio" name="rate"
+                    id="rate-5">
+                <label for="rate-5" class="fa-solid fa-star fa-2x"></label>
+                <input onclick="document.getElementById('delE').style.display='none'" type="radio" name="rate"
+                    id="rate-4">
+                <label for="rate-4" class="fa-solid fa-star fa-2x"></label>
+                <input onclick="document.getElementById('delE').style.display='none'" type="radio" name="rate"
+                    id="rate-3">
+                <label for="rate-3" class="fa-solid fa-star fa-2x"></label>
+                <input onclick="document.getElementById('delE').style.display='none'" type="radio" name="rate"
+                    id="rate-2">
+                <label for="rate-2" class="fa-solid fa-star fa-2x"></label>
+                <input onclick="document.getElementById('delE').style.display='none'" type="radio" name="rate"
+                    id="rate-1">
+                <label for="rate-1" class="fa-solid fa-star fa-2x" id="active-color"></label>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
